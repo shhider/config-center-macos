@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+	<head>
+		<title>Subscriptions - RSS</title>
+	</head>
+	<body>
+		<outline htmlUrl="https://www.microsoft.com/en-us/research/" title="Microsoft Research" xmlUrl="https://www.microsoft.com/en-us/research/feed/" type="rss" text="Microsoft Research"/>
+		<outline htmlUrl="https://devblogs.microsoft.com/typescript/" title="TypeScript" xmlUrl="https://devblogs.microsoft.com/typescript/feed/" type="rss" text="TypeScript"/>
+		<outline htmlUrl="https://justyy.com" title="小赖子的英国生活和资讯" xmlUrl="http://feeds.feedburner.com/zhihua-xblog" type="rss" text="小赖子的英国生活和资讯"/>
+	</body>
+</opml>
