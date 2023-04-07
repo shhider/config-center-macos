@@ -8,7 +8,9 @@ alias serverhere="python3 -m http.server 8080"
 alias tree="find . -print | sed -e 's;[^/]*/;|----;g;s;----|; |;g'"
 alias gitdiffbranch="git log --oneline --graph --decorate --abbrev-commit"
 alias pn=pnpm
-alias ls='lsd -l --header --color=always --group-directories-first'
+
+alias l='lsd -a --group-directories-first --color=always'
+alias ll="lsd -a -l --header --group-directories-first --color=always --date '+%y-%m%d %H:%M'"
 
 # #region NVM Lazy Loading
 export NVM_DIR="$HOME/.nvm"
