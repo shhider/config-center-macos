@@ -2,6 +2,10 @@ export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles
 export WE_CLI_DEBUG=1
 
+ZSH_THEME="ys_shh"
+plugins={shh-git}
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+
 # proxy
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 
@@ -19,12 +23,12 @@ export NVM_DIR="$HOME/.nvm"
 # This lazy loads nvm
 nvm() {
   unset -f nvm
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh" --no-use # This loads nvm
   nvm $@
 }
 
 # This loads nvm bash_completion
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
 # This resolves the default node version
 DEFAULT_NODE_VER="$((cat "$NVM_DIR/alias/default" || cat ~/.nvmrc) 2> /dev/null)"
