@@ -13,6 +13,7 @@ alias serverhere="python3 -m http.server 8080"
 alias tree="find . -print | sed -e 's;[^/]*/;|----;g;s;----|; |;g'"
 alias gitdiffbranch="git log --oneline --graph --decorate --abbrev-commit"
 alias pn=pnpm
+alias du-all="du -sh .* *"
 
 alias l='lsd -a --group-directories-first --color=always'
 alias ll="lsd -a -l --header --group-directories-first --color=always --date '+%y-%m%d %H:%M'"
