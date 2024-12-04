@@ -5,6 +5,7 @@ git config --global pull.rebase true
 git config --global push.autoSetupRemote true
 git config --global branch.sort "-committerdate"
 git config --global merge.stat false
+git config --global core.quotepath false
 ```
 
 ...
