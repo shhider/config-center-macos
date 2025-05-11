@@ -1,4 +1,8 @@
 syntax on
+set nocursorcolumn
+set nocursorline
+set norelativenumber
+syntax sync minlines=256
 set number
 set guifont=Cascadia:hCode
 

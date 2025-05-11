@@ -22,7 +22,7 @@ body {
 
 .markdown-body h1,
 .markdown-body h2 {
-  font-family: "Apple LiSung", var(--markdown-font-family);
+  font-family: var(--markdown-font-family);
 }
 
 .markdown-body h2 {
